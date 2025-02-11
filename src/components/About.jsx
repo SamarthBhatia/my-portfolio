@@ -20,7 +20,7 @@ const About = () => {
             About <span className="text-primary">me</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
+            <div className="flex flex-col justify-center">
               <p className="text-gray-400 mb-6">
                 I'm a Computer Science and Engineering student at Politecnico di Milano,
                 specializing in full-stack development and system architecture. With a strong
@@ -33,9 +33,9 @@ const About = () => {
                 robust software solutions.
               </p>
             </div>
-            <div>
+            <div className="flex flex-col">
               <h3 className="text-xl font-semibold mb-4">Skills</h3>
-              <div className="space-y-6">
+              <div className="space-y-8">
                 {skills.map((skillGroup) => (
                   <div key={skillGroup.category}>
                     <h4 className="text-primary mb-2">{skillGroup.category}</h4>
@@ -43,7 +43,7 @@ const About = () => {
                       {skillGroup.items.map((skill) => (
                         <span
                           key={skill}
-                          className="bg-secondary px-3 py-1 rounded-full text-sm"
+                          className="bg-secondary/30 text-primary px-4 py-2 rounded-full text-sm inline-block"
                         >
                           {skill}
                         </span>

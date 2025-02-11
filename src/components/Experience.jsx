@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion'
 
 const Experience = () => {
@@ -33,7 +34,7 @@ const Experience = () => {
   ]
 
   return (
-    <section id="experience" className="section-container">
+    <section id="experience" className="w-full py-20">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
