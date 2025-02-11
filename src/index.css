@@ -14,7 +14,7 @@
 
 @layer components {
   .section-container {
-    @apply w-full py-20;
+    @apply w-full py-16;
   }
   
   .section-title {
