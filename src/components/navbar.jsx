@@ -35,7 +35,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <a
-                href="/resume.pdf"
+                href="resume.pdf"
                 className="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/80 transition-colors"
                 download
               >

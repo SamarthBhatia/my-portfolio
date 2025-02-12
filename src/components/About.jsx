@@ -99,7 +99,7 @@ const About = () => {
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 to-transparent rounded-2xl blur"></div>
                 <div className="relative bg-dark rounded-xl overflow-hidden">
                   <img
-                    src="/profile.jpg"
+                    src="profile.jpg"
                     alt="Samarth Bhatia"
                     className="w-full h-64 object-cover object-center"
                   />

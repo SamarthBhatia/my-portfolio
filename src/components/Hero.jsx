@@ -16,7 +16,7 @@ const Hero = () => {
           className="w-32 h-32 mx-auto mb-8 rounded-full border-2 border-primary p-1"
         >
           <img
-            src="/profile2.jpg"
+            src="profile2.jpg"
             alt="Samarth Bhatia"
             className="w-full h-full object-cover rounded-full"
           />
@@ -60,7 +60,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             <a
-              href="/resume.pdf"
+              href="resume.pdf"
               className="group relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-medium bg-primary rounded-lg text-white transition duration-300 ease-out hover:bg-primary/90"
               download
             >
