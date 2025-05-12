@@ -4,6 +4,36 @@ import SectionBackground from './SectionBackground';
 
 const Projects = () => {
   const projects = [
+    
+    {
+      title: "Qupiler",
+      period: "Apr 2025",
+      location: "Milan, Italy",
+      description: "C-to-Quantum Circuit Compiler emitting QMLIR and Qiskit",
+      githubUrl: "https://github.com/SamarthBhatia/Qupiler",
+      points: [
+        "Engineered a compiler pipeline that parses C-style JSON AST and emits gate-level QMLIR & Qiskit circuits",
+        "Unified classical arithmetic, dynamic qubit allocation, and core quantum ops in an extensible IR",
+        "Designed modular backend/dialect framework supporting custom quantum logic and optimizations",
+        "Integrated optimizations: constant folding, gate fusion, commutation reordering, and T-count reduction"
+      ],
+      tags: ["Quantum Computing", "Compiler Design", "Qiskit", "xDSL", "MLIR"],
+      gradient: "from-[#F6AD55] to-[#ED8936]"
+    },
+    {
+      title: "Flowatch",
+      period: "Mar 2025",
+      location: "Delhi, India",
+      description: "Intelligent firewall with dynamic traffic analysis and low overhead",
+      githubUrl: "https://github.com/SamarthBhatia/Flowatch",
+      points: [
+        "Built a C++ network firewall that filters malicious connections with 95% accuracy and <5% CPU usage",
+        "Designed intelligent app-behavior analysis reducing false positives by 75% over traditional firewalls",
+        "Implemented modular packet inspection and logging subsystems with real-time alerting"
+      ],
+      tags: ["C++", "Network Security", "Firewall", "Traffic Analysis"],
+      gradient: "from-[#F687B3] to-[#D53F8C]"
+    },
     {
       title: "MercuryTrade",
       period: "Nov 2024",
@@ -17,34 +47,6 @@ const Projects = () => {
       ],
       tags: ["C++", "Memory Management", "Concurrent Programming", "WebSockets"],
       gradient: "from-[#63B3ED] to-[#4299E1]"
-    },
-    {
-      title: "CoreLite-OS",
-      period: "May, 2024",
-      location: "Delhi, India",
-      description: "Lightweight Rust-based operating system kernel",
-      githubUrl: "https://github.com/SamarthBhatia/CoreLite-OS",
-      points: [
-        "Developed a lightweight Rust-based kernel (640KB binary size) with essential functionalities",
-        "Implemented paging and dynamic memory allocation with custom allocator",
-        "Created reliable interrupt handling mechanisms with 1000 Hz timer resolution"
-      ],
-      tags: ["Rust", "OS Development", "Memory Management", "Interrupt Handling"],
-      gradient: "from-[#B794F4] to-[#9F7AEA]"
-    },
-    {
-      title: "SAAS-AI",
-      period: "Feb, 2023",
-      location: "Delhi, India",
-      description: "AI-powered SaaS platform with multiple AI tools",
-      githubUrl: "https://github.com/SamarthBhatia/SAAS-AI",
-      points: [
-        "Built a comprehensive AI SaaS platform with conversation, image, music, and video generation",
-        "Implemented secure Stripe subscription system with multiple pricing tiers",
-        "Developed real-time chat with AI and integrated Clerk authentication"
-      ],
-      tags: ["Next.js", "React", "Stripe", "AI APIs", "Prisma"],
-      gradient: "from-[#68D391] to-[#48BB78]"
     }
   ];
 
