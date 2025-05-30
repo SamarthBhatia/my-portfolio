@@ -12,9 +12,10 @@ const Blog = () => {
       id: 1,
       title: "Cache me before it's time: How LogStream rewrites the rules of NVM Logging",
       excerpt: "Non Volatile Memory is like Harry Maguire - full of potential but extremely unpredictable under pressure. Here's how LogStream changes the game...",
-      date: "December 2024",
+      date: "May 2025",
       readTime: "8 min read",
       tags: ["Systems Programming", "Memory Management", "Performance"],
+      githubUrl: "https://github.com/SamarthBhatia/LogStream",
       content: {
         intro: "Non Volatile Memory is like Harry Maguire - full of potential but extremely unpredictable under pressure(Sorry non-football fans). Sure emerging NVMs like PCM, ReRAM, STT-RAM promises to remember everything, even after a power cut, but getting it to log things efficiently, that is the digital equivalent of herding cattle in some really difficult mountain terrain.",
         problem: "Part of the problem lies not in the NVM itself, but in the CPU cache, the overenthusiastic middleman, which receives data from the CPU Registers. While we rely on NVM for durability, the CPU cache often acts like a clueless intern: eager to help but unaware of the bigger picture. It may delay, reorder, or even drop writes before they reach the NVM, completely ignoring the concept of persistence. So when we naively trust the cache to handle writes reliably, we're essentially sabotaging the very durability that NVMs were meant to guarantee.",
@@ -39,7 +40,7 @@ const Blog = () => {
               { mode: "Traditional Logging", time: "0.45", writes: "1,000,000" },
               { mode: "LogStream", time: "0.25", writes: "500,000" }
             ],
-            afterTable: "LogStream slashes writes by half and speeds things up by ~44%. It's like upgrading your log from a Fiat Punto to a Honda Civic.\n\nSo, apart from reduction in number of writes and speeds, what other benefits do we see?\n\n• Energy Savings: Fewer writes === Less Juice Used\nYeah I did JavaScript too for a while, sadly :)\n\n• NVM Cells would live longer.\n\n• New Paradigms: Using existing hardware protocols for persistence is the software equivalent of finding money in your coat pocket."
+            afterTable: "LogStream slashes writes by half and speeds things up by ~44%. It's like upgrading your log from a Fiat Punto to a Honda Civic.\n\nSo, apart from reduction in number of writes and speeds, what other benefits do we see?\n\n• Energy Savings: Fewer writes === Less Juice Used\n Yeah I did JavaScript too for a while, sadly :)\n\n• NVM Cells would live longer.\n\n• New Paradigms: Using existing hardware protocols for persistence is the software equivalent of finding money in your coat pocket."
           },
           {
             title: "5. Bonus Thoughts, If You are not yawning already:",
@@ -129,6 +130,16 @@ const Blog = () => {
                         <p className="text-gray-300 text-lg leading-relaxed mb-4">
                           {post.excerpt}
                         </p>
+                        
+                        {/* Note about GitHub link - removed the direct link to prevent conflicts */}
+                        <div className="flex items-center gap-2 mb-4">
+                          <div className="flex items-center gap-2 text-primary">
+                            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                              <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.17 22 16.42 22 12c0-5.523-4.477-10-10-10z" />
+                            </svg>
+                            <span className="text-sm font-medium">Click to read the full blog post</span>
+                          </div>
+                        </div>
                       </div>
                       <div className="flex items-center">
                         <svg 
